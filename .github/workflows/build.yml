@@ -24,7 +24,7 @@ jobs:
 
     - name: Build
       run: |
-        msbuild -m -p -p:Configuration=Release -p:Platform=x64 "-target:Gibbed.Visceral.FileFormats;Gibbed.Visceral.BigViewer;Gibbed.Visceral.Setup;Gibbed.RefPack;Gibbed.Visceral.StrUnpack;Gibbed.IO"
+        msbuild -m -p -p:Configuration=Release -p:Platform=x64 "-target:Gibbed.Visceral.FileFormats;Gibbed.Visceral.BigViewer;Gibbed.Visceral.Setup;Gibbed.RefPack;Gibbed.Visceral.StrUnpack;Gibbed.IO" Gibbed.Visceral.sln
 
     - name: Finalise?
       run: ls
