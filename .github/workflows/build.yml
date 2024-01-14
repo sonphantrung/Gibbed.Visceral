@@ -32,6 +32,7 @@ jobs:
 
     - name: Build
       run: |
+        nuget restore Gibbed.Visceral.sln
         msbuild -m -p:Configuration=Release -p:Platform=x86 Gibbed.Visceral.sln
 
     - name: Finalise?
